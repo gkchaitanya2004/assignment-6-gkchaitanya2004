@@ -32,16 +32,16 @@ This assignment challenges you to apply linear and non-linear regression to impu
 ## Results 
 | Model   | Accuracy | Recall | Precision | F1 Score |
 |---------|----------|--------|-----------|----------|
-| Model 1 | 0.691    | 0.641  | 0.378     | 0.476    |
-| Model 2 | 0.693    | 0.645  | 0.387     | 0.484    |
-| Model 3 | 0.692    | 0.645  | 0.387     | 0.484    |
-| Model 4 | 0.685    | 0.636  | 0.363     | 0.462    |
+| Model 1 | 0.680    | 0.618  | 0.367     | 0.461    |
+| Model 2 | 0.694    | 0.666  | 0.384     | 0.488    |
+| Model 3 | 0.692    | 0.663  | 0.382     | 0.484    |
+| Model 4 | 0.699    | 0.647  | 0.388     | 0.485    |
 
 ## Conclusion and Final Recommendation
 
 #### Imputation Strategies Vs ListWise Deletion
 
-From the above results, we can see that the **imputation strategies** performs slightly better normal **listwise deletion**. This is because :
+From the above results we can see the **imputation strategies** performs slightly better normal **listwise deletion**. This is because :
 
 - In list wise deletion we are **deleting rows** which contains null values which lwads to a smaller dataset and.A smaller dataset provides less information for the model to learn so model doesnt generalize to new unseen data
 
@@ -65,7 +65,7 @@ From the above results, we can see that the **imputation strategies** performs s
 
 - In this scenario **Linear Regression Imputation (Model 2)** is recommended as the best strategy.
 
-- It has high **Recall** and **F1 score** which helps to detect positive cases more effectively.
+- Althought it has low accuracy compared to **Model 4** Its high **Recall** and **F1 score** which helps to detect positive cases more effectively which is more important in this case.
 
 - Linear imputation preserves data distribution while capturing the main linear relationships between features, avoiding the bias introduced by listwise deletion or the noise sometimes added by non-linear methods. 
 
